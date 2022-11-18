@@ -13,10 +13,14 @@ public class PedestrainBehaviour : MonoBehaviour
 
     bool isInTram;
 
+    public GameObject TramDetector;
+    private TramDetection detection;
+
     // Start is called before the first frame update
     void Start()
     {
         float rand;
+        detection = TramDetector.GetComponent<TramDetection>();
         PedestrainRB = gameObject.GetComponent<Rigidbody>();
         ChanceToEnter = 14;
         MoveSpeed = 7.5f;
@@ -51,9 +55,9 @@ public class PedestrainBehaviour : MonoBehaviour
     private void Update()
     {
 
-        if (willEnterTram)
+        if (willEnterTram && detection.TramDetected)
         {
-            if (gameObject.transform.position.x <= 107.5f)
+            if (gameObject.transform.position.x <= 108.5f && gameObject.transform.position.x >= 106.5f)
             {
                 inPosition = true;
             }
@@ -67,8 +71,11 @@ public class PedestrainBehaviour : MonoBehaviour
         if (gameObject.transform.position.z >= 127.0f)
         {
             isInTram = true;
+            PedestrainRB.MovePosition(new Vector3(97.0f, gameObject.transform.position.y, gameObject.transform.position.z));
             gameObject.GetComponent<MeshRenderer>().enabled = false;
         }
 
     }
+
+    
 }

@@ -12,6 +12,7 @@ public class PedestrainSpawn : MonoBehaviour
     public int numberOfPedestrains;
 
     GameObject newObject;
+    public GameObject PedestrainParent;
 
 
     // Update is called once per frame
@@ -32,7 +33,7 @@ public class PedestrainSpawn : MonoBehaviour
                     new Vector3(gameObject.transform.position.x + Random.Range(-45.0f, 45.0f),
                                 gameObject.transform.position.y + 1.0f,
                                 gameObject.transform.position.z + Random.Range(-2.0f, 2.0f)),
-                    Quaternion.identity, gameObject.transform) ;
+                    Quaternion.identity, PedestrainParent.transform) ;
             }
 
             TimeElapsed = 0.0f;
