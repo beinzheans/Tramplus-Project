@@ -33,5 +33,5 @@ The simulation will have a slider that can directly change People Density rangin
 
 ![image](https://user-images.githubusercontent.com/112590223/202681312-284b70da-2a83-4528-9b35-6b4b3c471762.png)
 
-As you can see, annually, there are only 1.4% of people using trams, even before the pandemic (2016). So, this will be our reference metric. To reiterate, each pedestrain will have a 1.4% chance of entering the trams. So if the traffic flow is 1000 people per hour then it is expected that 14 people will be on the tram, which is quite low. As such, for the purpose of the simulation, we will use 14% instead of 1.4%.
+As you can see, annually, there are only 1.4% of people using trams, even before the pandemic (2016). So, this will be our reference metric. To reiterate, each pedestrain will have a 1.4% chance of entering the trams. So if the traffic flow is 1000 people per hour then it is expected that 14 people will be on the tram, which is quite low.
 
