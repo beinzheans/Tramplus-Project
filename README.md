@@ -35,3 +35,30 @@ The simulation will have a slider that can directly change People Density rangin
 
 As you can see, annually, there are only 1.4% of people using trams, even before the pandemic (2016). So, this will be our reference metric. To reiterate, each pedestrain will have a 1.4% chance of entering the trams. So if the traffic flow is 1000 people per hour then it is expected that 14 people will be on the tram, which is quite low.
 
+#### Queueing in line
+
+In the real world, pedestrains will queue in lines when the tram is gone. In this simulation, there will be no queueing time. If the tram is not there, then no passengers will be on the tram.
+
+#### Leaving the tram
+
+All passangers will have a random value every time a tram makes their stop. If this random value is in a range of values, then the passenger will leave the tram.
+
+### Tram Behaviour
+
+#### Frequency
+
+The trams will have a 1 - 2 minute interval in the real world. For the sake of simulation, the interval will be 30 seconds.
+
+#### In the station
+
+The trams will stay in their station for 15 seconds. After 15 seconds, the tram will leave.
+
+### Weather
+
+The simulation will allow a temperature ranging from 15 to 30 to be picked from. It will also allow what condition the weather will be. For example, sunny, overcast, rainy etc. These two will be the inputs for the AI. The AI should be able to determine what is the best condition for a certain condition. For example, in sunny weather, the AI should be able to give plans for air-conditioned places.
+
+The data can be found on TripAdvisor. By using reviews, we can get data easily.
+
+### User preference
+
+This will be the fourth input for the AI. This is also the last stage, so it might not be implemented due to time constraints. The AI should be able to determine what is the most suitable for different kinds of people. For example, if one likes technology, then the AI should give in places that has more technology, such as the Space Museum, instead of something related with arts.
