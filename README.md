@@ -41,7 +41,7 @@ In the real world, pedestrains will queue in lines when the tram is gone. In thi
 
 #### Leaving the tram
 
-All passangers will have a random value every time a tram makes their stop. If this random value is in a range of values, then the passenger will leave the tram.
+All passangers will have a 10% to leave every time a tram makes their stop. If this random value is in a range of values, then the passenger will leave the tram.
 
 ### Tram Behaviour
 
