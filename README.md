@@ -6,7 +6,7 @@ Make an AI that combines traffic density, user preference and weather to make an
 
 ### Congestion Index
 
-Traffic Density will be measured using seat availability. The counter will be equal to the seating capacity. The counter will decrease when the traffic has hit an enterance. It will increase when the traffic has hit an exit. The counter will be converted to percentage and its name is Congested Percent. Congested Percent is calculated by (total seats - counter) / total seats. The higher the Congested Percent, the more it is congested and vice versa.
+Traffic Density will be measured using seat availability. The counter will be equal to the seating capacity. The counter will decrease when the traffic has hit an enterance. It will increase when the traffic has hit an exit. The counter will be converted to percentage and its name is Congested Percent. Congested Percent is calculated by counter / total seats. The higher the Congested Percent, the more it is congested and vice versa.
 
 Once we have the Congested Percent, we will take the average highest seat capacity. It is calculated by the sum the peak Congested Percent of every tram divided by number of trams. The average will change once per hour. This will be called the Congestion Index, which is the input for the AI.
 
